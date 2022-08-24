@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Bo96MybEek5oGe7AsY0HLPbXKlZdSUNhgbazf/wmvaI=",
+  "Source": "WebApiMongodb",
+  "BasePath": "_content/WebApiMongodb",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
