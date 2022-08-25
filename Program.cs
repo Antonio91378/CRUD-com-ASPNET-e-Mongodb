@@ -1,13 +1,19 @@
-using WebApiMondb.services;
+
+
 using WebApiMongodb.Models;
+using WebApiMongodb.services.LivrosServices;
+using WebApiMongodb.services.ProdutoServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.Configure<ProdutoDatabaseSettings>
     (builder.Configuration.GetSection("DevNetStoreDatabase"));
+builder.Services.Configure<LivroDatabaseSettings>
+    (builder.Configuration.GetSection("LivrosDatabase"));
 
 builder.Services.AddSingleton<ProdutoServices>();
+builder.Services.AddSingleton<LivroServices>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "WebApiMondb": {
+    "WebApiMongodb": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

@@ -2,7 +2,7 @@ using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using WebApiMongodb.Models;
 
-namespace WebApiMondb.services
+namespace WebApiMongodb.services.ProdutoServices
 {
     public class ProdutoServices
     {

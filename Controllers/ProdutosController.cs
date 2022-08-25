@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using WebApiMondb.services;
 using WebApiMongodb.Models;
+using WebApiMongodb.services.ProdutoServices;
 
 namespace WebApiMongodb.Controllers
 {
@@ -25,6 +25,12 @@ namespace WebApiMongodb.Controllers
         {
             await _produtoServices.CreateAsync(produto);
             return produto;
+        }
+
+        [HttpPatch]
+        public async Task UpdateProduto(string id, Produto produto)
+        {
+            await _produtoServices.UpdateAsync(id, produto);
         }
     }
 }
